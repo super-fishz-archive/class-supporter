@@ -57,7 +57,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`transaction` (
   `seq` INT NOT NULL COMMENT '',
   `transaction_teacher_se` INT NOT NULL COMMENT '',
-  `create_at` DATETIME NOT NULL DEFAULT now() COMMENT '',
+  `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '',
   `name` VARCHAR(45) NULL COMMENT '',
   `is_favorite` TINYINT(1) NOT NULL DEFAULT 0 COMMENT '',
   PRIMARY KEY (`seq`)  COMMENT '',
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Reports` (
   `Exit_Tickets` TINYINT(1) NOT NULL COMMENT '',
   `Short_Answers` TINYINT(1) NOT NULL COMMENT '',
   `Archived_Reports` TINYINT(1) NOT NULL COMMENT '',
-  `Date` DATETIME NOT NULL COMMENT '',
+  `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '',
   `transaction_seq` INT NOT NULL COMMENT '',
   PRIMARY KEY (`Report_seq`)  COMMENT '',
   INDEX `report_transaction_seq_fkey_idx` (`transaction_seq` ASC)  COMMENT '',

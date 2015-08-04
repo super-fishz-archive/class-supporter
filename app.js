@@ -9,7 +9,7 @@ var model = require('./app/model');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var signup = require('./routes/signup');
-
+var teacher = require('./routes/teacher');
 var app = express();
 
 // view engine setup
@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/signup', signup);
+app.use('/teacher', teacher);
 app.listen(3000);
 
 // catch 404 and forward to error handler

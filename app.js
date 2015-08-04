@@ -10,6 +10,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var signup = require('./routes/signup');
 var teacher = require('./routes/teacher');
+var stdlog = require('./routes/std_log');
+var stdshort = require('./routes/std_short');
+
 var app = express();
 
 // view engine setup
@@ -27,7 +30,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/signup', signup);
+<<<<<<< HEAD
 app.use('/teacher', teacher);
+=======
+app.use('/std_log', stdlog);
+app.use('/std_short', stdshort);
+
+>>>>>>> 3641437e592d22614e43dd5b520c999a322f2f75
 app.listen(3000);
 
 // catch 404 and forward to error handler

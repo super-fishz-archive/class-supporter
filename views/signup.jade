@@ -1,0 +1,80 @@
+extends layout
+
+block content
+    form.form-horizontal
+        h1(align='center') New Account
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='inputID') ID    
+            .col-sm-5
+                input#inputID.form-control(type='id', placeholder='ID')
+          
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='inputPassword') Password
+            .col-sm-5
+                input#inputPassword.form-control(type='password', placeholder='Password')
+          
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='inputPasswordConfirm') Password Confirm
+            .col-sm-5
+                input#inputPasswordConfirm.form-control(type='password_confirm', placeholder='Password Confirm')
+          
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='inputEMail') E-Mail
+            .col-sm-5
+                input#inputEmail.form-control(type='E_Mail', placeholder='E-Mail')
+
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='inputOrganization') Organization
+            .row
+                .col-sm-5
+                    .input-group
+                        .input-group-btn
+                            select.form-control
+                                option Type
+                                option University
+                                option Corperate
+                                option Primaty / Second School
+                                option Other
+                            input.form-control(type='text', placeholder='Name')
+
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='selectNation') Nation
+            .col-sm-5
+                select.form-control
+                    option Nation
+                    option Korea
+                    option America
+                    option France
+                    option German
+
+        .form-group
+            label.col-sm-offset-2.col-sm-2.control-label(for='selectRole') Role
+            .col-sm-5
+                label.checkbox-inline
+                    input(type='checkbox')
+                    | Teacher
+                label.checkbox-inline
+                    input(type='checkbox')
+                    | Administrator
+                label.checkbox-inline
+                    input(type='checkbox')
+                    | IT / Technology
+                label.checkbox-inline
+                    input(type='checkbox')
+                    | Other
+
+        .form-group
+            .col-sm-offset-4.col-sm-4
+                .checkbox
+                    label
+                        input(type='checkbox')
+                        | I agree to the TERMs
+
+        .form-group
+            .col-sm-offset-4.col-sm-4
+                button.btn.btn-default.btn-block(type='submit') Submit
+        
+        .form-group
+            .col-sm-offset-4.col-sm-4
+                button.btn.btn-default.btn-block(type='cancel') Cancel
+

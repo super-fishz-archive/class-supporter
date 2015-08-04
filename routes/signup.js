@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
     console.log(req.body);
     console.log(req.body.id);
-    res.render('signup_result', req.body);
+//   res.render('signup_result', req.body);
 });
 
 module.exports = router;

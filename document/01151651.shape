@@ -1,0 +1,149 @@
+[
+  {
+    "type": "shape_designer.figure.ExtPolygon",
+    "id": "81ab5fdf-d189-b6d7-f142-493a5587d1d7",
+    "x": 574,
+    "y": 32,
+    "width": 415,
+    "height": 388,
+    "alpha": 1,
+    "angle": 0,
+    "userData": {
+      "baseClass": "draw2d.SetFigure",
+      "code": "/**\n * by 'Draw2D Shape Designer'\n *\n * Custom JS code to tweak the standard behaviour of the generated\n * shape. add your custome code and event handler here.\n *\n *\n */\ntestShape = testShape.extend({\n\n    init: function(attr, setter, getter){\n         this._super(attr, setter, getter);\n\n         // your special code here\n    },\n\n    /**\n     *  Called by the simulator for every calculation\n     *  loop\n     *  @required\n     **/\n    calculate:function()\n    {\n    },\n\n\n    /**\n     *  Called if the simulation mode is starting\n     *  @required\n     **/\n    onStart:function()\n    {\n    },\n\n    /**\n     *  Called if the simulation mode is stopping\n     *  @required\n     **/\n    onStop:function()\n    {\n    }\n});"
+    },
+    "cssClass": "shape_designer_figure_PolyCircle",
+    "ports": [],
+    "bgColor": "#95C06A",
+    "color": "#1B1B1B",
+    "stroke": 0,
+    "radius": 0,
+    "dasharray": null,
+    "vertices": [
+      {
+        "x": 883.1051026249493,
+        "y": 194
+      },
+      {
+        "x": 888.1465458674894,
+        "y": 175.1850776753655
+      },
+      {
+        "x": 890,
+        "y": 154
+      },
+      {
+        "x": 888.1465458674894,
+        "y": 132.8149223246345
+      },
+      {
+        "x": 882.6424997358808,
+        "y": 112.27354251426843
+      },
+      {
+        "x": 873.6550992617015,
+        "y": 93.00000000000004
+      },
+      {
+        "x": 861.4574220605152,
+        "y": 75.57991161824216
+      },
+      {
+        "x": 846.4200883817578,
+        "y": 60.54257793948467
+      },
+      {
+        "x": 828.9999999999999,
+        "y": 48.344900738298435
+      },
+      {
+        "x": 809.7264574857317,
+        "y": 39.35750026411918
+      },
+      {
+        "x": 789.1850776753655,
+        "y": 33.853454132510606
+      },
+      {
+        "x": 768,
+        "y": 32
+      },
+      {
+        "x": 746.8149223246345,
+        "y": 33.85345413251062
+      },
+      {
+        "x": 726.2735425142685,
+        "y": 39.35750026411917
+      },
+      {
+        "x": 707,
+        "y": 48.344900738298506
+      },
+      {
+        "x": 689.5799116182421,
+        "y": 60.5425779394847
+      },
+      {
+        "x": 674.5425779394847,
+        "y": 75.57991161824225
+      },
+      {
+        "x": 662.3449007382985,
+        "y": 92.99999999999999
+      },
+      {
+        "x": 653.3575002641192,
+        "y": 112.27354251426843
+      },
+      {
+        "x": 647.8534541325106,
+        "y": 132.81492232463455
+      },
+      {
+        "x": 646,
+        "y": 154.00000000000003
+      },
+      {
+        "x": 647.8534541325106,
+        "y": 175.1850776753655
+      },
+      {
+        "x": 652.8948973750507,
+        "y": 194
+      },
+      {
+        "x": 574,
+        "y": 194
+      },
+      {
+        "x": 574,
+        "y": 420
+      },
+      {
+        "x": 989,
+        "y": 420
+      },
+      {
+        "x": 989,
+        "y": 194
+      },
+      {
+        "x": 883.1051026249493,
+        "y": 194
+      }
+    ],
+    "blur": 0,
+    "filters": [
+      {
+        "name": "shape_designer.filter.PositionFilter"
+      },
+      {
+        "name": "shape_designer.filter.SizeFilter"
+      },
+      {
+        "name": "shape_designer.filter.FillColorFilter"
+      }
+    ]
+  }
+]

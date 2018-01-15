@@ -1,0 +1,68 @@
+[
+  {
+    "type": "shape_designer.figure.ExtPolygon",
+    "id": "7814197d-71e9-1f62-77b8-d4bbc0a144a8",
+    "x": 737,
+    "y": 253,
+    "width": 283,
+    "height": 290,
+    "alpha": 1,
+    "angle": 0,
+    "userData": {
+      "baseClass": "draw2d.SetFigure",
+      "code": "/**\n * by 'Draw2D Shape Designer'\n *\n * Custom JS code to tweak the standard behaviour of the generated\n * shape. add your custome code and event handler here.\n *\n *\n */\ntestShape = testShape.extend({\n\n    init: function(attr, setter, getter){\n         this._super(attr, setter, getter);\n\n         // your special code here\n    },\n\n    /**\n     *  Called by the simulator for every calculation\n     *  loop\n     *  @required\n     **/\n    calculate:function()\n    {\n    },\n\n\n    /**\n     *  Called if the simulation mode is starting\n     *  @required\n     **/\n    onStart:function()\n    {\n    },\n\n    /**\n     *  Called if the simulation mode is stopping\n     *  @required\n     **/\n    onStop:function()\n    {\n    }\n});"
+    },
+    "cssClass": "shape_designer_figure_PolyRect",
+    "ports": [],
+    "bgColor": "#FFFFFF",
+    "color": "#303030",
+    "stroke": 1,
+    "radius": 0,
+    "dasharray": null,
+    "vertices": [
+      {
+        "x": 737,
+        "y": 517
+      },
+      {
+        "x": 737,
+        "y": 543
+      },
+      {
+        "x": 1020,
+        "y": 543
+      },
+      {
+        "x": 1020,
+        "y": 253
+      },
+      {
+        "x": 871,
+        "y": 253
+      },
+      {
+        "x": 871,
+        "y": 517
+      },
+      {
+        "x": 737,
+        "y": 517
+      }
+    ],
+    "blur": 0,
+    "filters": [
+      {
+        "name": "shape_designer.filter.PositionFilter"
+      },
+      {
+        "name": "shape_designer.filter.SizeFilter"
+      },
+      {
+        "name": "shape_designer.filter.StrokeFilter"
+      },
+      {
+        "name": "shape_designer.filter.FillColorFilter"
+      }
+    ]
+  }
+]
